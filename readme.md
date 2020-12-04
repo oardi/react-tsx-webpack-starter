@@ -1,6 +1,5 @@
-# react TSX
-
-react TSX Webpack5 Starter with SCSS Support.
+# React TSX Starter
+React TSX Webpack Starter
 
 ## Usage
 * `npm install`
