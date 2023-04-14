@@ -1,14 +1,30 @@
 {
-	"compileOnSave": false,
 	"compilerOptions": {
+		"allowJs": false,
 		"allowSyntheticDefaultImports": true,
-		"target": "es5",
-		"lib": [
-			"dom",
-			"dom.iterable",
-			"esnext"
-		],
-		"module": "esnext",
-		"jsx": "react"
-	}
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"isolatedModules": true,
+		"jsx": "react-jsx",
+		"lib": ["DOM", "DOM.Iterable", "ESNext"],
+		"module": "commonjs", // muss commonjs sein, sodass typescript webpack
+		"moduleResolution": "Node",
+		"noFallthroughCasesInSwitch": true,
+		"noEmit": false,
+		"resolveJsonModule": true,
+		"rootDir": ".",
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"strict": true,
+		"target": "ESNext",
+		"useDefineForClassFields": true,
+		"types": ["node", "webpack-env"]
+	},
+	"include": [
+		"src/**/*",
+		".eslintrc.js",
+		"webpack.common.ts",
+		"webpack.dev.ts",
+		"webpack.prod.ts"
+	]
 }
